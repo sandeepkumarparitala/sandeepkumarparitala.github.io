@@ -1,0 +1,110 @@
+<!doctype html>
+<html>
+<head>
+<title>what web</title>
+<link rel="stylesheet" href="what.css" type="text/css" />
+
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+</head>
+<body>
+<main class="container">
+  
+  <section class="home" >
+  <aside class="leftbar">
+    <div class="header">
+	 <div class="imgbox">
+	 </div>
+	 <div class="panel">
+	  <div class="heading">
+	  <h4>profile</h4>
+	  </div>
+	  <div class="clicker">
+	  <button id="btn" >+</button>
+	  </div>
+	 </div>
+	 </div>
+	 <div class="searchbar">
+	 <input class="sbar" type="text" name="search" placeholder="Search..">
+	 </div>
+	 <div class="togglebox">
+     <div class="chathide" id="chide" style='background-color:red'>
+     </div>	 
+	 <div class="chatlist" id="clist">
+	 </div>
+	 </div>
+  </aside>
+  <aside class="rightbar">
+  <div class="flex">
+   <div class="righthead">
+    <div class="rphoto">
+    </div>
+    <div class="rpanel">
+      <div class="info">
+	  <p>NAME<br>11:50AM</p>
+	  </div>
+	  <div class="settings">
+	  </div>
+	  <div class="logout">
+	  <button id="logout">logout</button>
+	  </div>
+   </div>
+   </div>
+   <div class="chatdisplay">
+   <div id="chatItems">
+   </div>
+    <div class="textbox">
+	  <input type="text" id="tbox" placeholder="type a message">
+	</div>
+   </div>
+   </div>
+   </aside>
+   </section>
+   
+  
+</main>
+
+<script type="text/javascript">
+$(document).ready(function(){
+	
+//chathide
+//chatlist
+$("#btn").click(function(){
+
+$(".chathide").toggle(600);})
+
+
+
+//login-signup
+$("#signupbtn").click(function(){
+        $(".login").hide();
+		$(".signup").show();
+		
+		//return false
+		
+		//
+		             })
+					 
+					 
+//signup-login
+$("#backbutton").click(function(){
+        $(".signup").hide();
+        $(".login").show();
+})	
+
+$("#logout").click(function(){
+         sessionStorage.removeItem("fname");
+         window.location.assign("form.html");})
+
+
+})
+	
+					
+	   
+</script>
+
+ </body>
+ </html>
+	 
+	 

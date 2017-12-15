@@ -1,0 +1,275 @@
+<!Doctype html>
+<html>
+<head>
+<title>FORM</title>
+<link rel="stylesheet" href="form.css" type="text/css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+<header class="headbox">
+<div class="headPanel">
+<div class="logo">
+</div>
+<nav class="menu">
+<ul>
+  <li><a href="#" >About</a></li>
+  <li><a href="#" >our team</a></li>
+  <li><a href="#">features</a></li>
+</ul>
+</nav>
+</div>
+<div class="lowpanel">
+<div class="introholder">
+<div class="chatimagebox">
+</div>
+<div class="introbox">
+</div>
+</div>
+</div>
+
+</header>
+
+<!--login box-->
+<section class="logindiv" >
+
+<section class="mainbox">
+<aside class="imageinfo">
+<div class="appinfo">
+
+</div>
+</aside>
+<aside class="loginside">
+<div class="loginbox">
+<form name="mform" id="mform"  method="post" onsubmit="return validate()" action="what12.html" >
+<input  type="text" name="uname" id="uname"  placeholder="user name.." required><br>
+<input type="number" value="mobile" id="mnumber" placeholder="mobile number..."><br>
+<input type="submit" value="login"  id="lgbutton">
+
+</form>
+<span><a id="signup" href="#" >signup</a></span>
+</div>
+</aside>
+</section>
+</section>
+
+<!--signup box-->
+
+<section class="container" style="display:none"  >
+<aside class="info">
+<div class="left1">
+<center><p style="font-family:open sans, arial; font-style:normal;font-weight:300; font-size:20px;line-height:24px;color:#737373;">  Create your own Account<p></center>
+<center><p style="font-family:open sans, arial; font-style:normal;font-weight:300; font-size:13px;line-height:17px;color:#737373;"> Start connecting</p></center><br>
+<br><br> <br>
+<center><span><img src="social.png" style="height:300px;width:300px;"></img></span></center>
+</div>
+<div class="left2">
+
+
+</div>
+</aside>
+<aside class="formdiv">
+<form name="myform" method="post" href="form2.html" id="mform" >
+<label>Name</label><br>
+<input type="text" name="fname" id="fname" placeholder="First name" style="width:125px; padding-left:10px; height:14px; width: 125px;
+    padding-left: 5px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    height: 14px;"> &nbsp &nbsp 
+<input type="text" name="lname" id="lname" placeholder="Last name" style="width:125px ; padding-left:10px; height:14px;width: 125px;
+    padding-left: 5px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    height: 14px;"><br><br>
+<label>Birthday</label><br>
+<input type="date" name="dob" id="dob"><br><br>
+<label>Age</label><br>
+<input type="number" name="age" id="age"><br><br>
+<label>Sex</label><br>
+<input type="radio" name="gender"  value="male">male<span> &nbsp </span>
+<input type="radio" name="gender" value="female">female<span> &nbsp </span>
+<input type="radio" name="gender" value="other">other<br><br>
+<label>Qualification</label><br>
+<select name="qualification" id="grad">
+<optgroup label="qualification">
+  <option value="B.tech">B.tech</option>
+  <option value="M.B.A">M.B.A</option>
+  <option value="M.tech">M.tech</option>
+</optgroup>
+</select>  <br><br>
+<label>Country</label><br>
+<select name="country" id="country">
+  <option value="india" selected>India</option>
+  <option value="U.S.A">U.S.A</option>
+  <option  value="Canada">CANADA</option>
+</select><br><br>
+<label>Pincode</label><br>
+<input type="number" name="pin" id="pin"><br><br>
+<label>Address</label><br>
+<input type="message" rows="10" cols="35"><br><br>
+<input type="button" id="save" value="saveform"> &nbsp &nbsp &nbsp &nbsp
+<input type="reset" ><br><br>
+<input type="checkbox" value="true" >Accept Terms and Conditions<br><br>
+
+</form>
+<button id="back">back to login</button>
+</aside>
+</section>
+
+<!--chat box home-->
+<section class="home" style="display:none" >
+  <aside class="leftbar">
+    <div class="header">
+	 <div class="imgbox">
+	 </div>
+	 <div class="panel">
+	  <div class="heading">
+	  <h4>profile</h4>
+	  </div>
+	  <div class="clicker">
+	  <button id="btn" >+</button>
+	  </div>
+	 </div>
+	 </div>
+	 <div class="searchbar">
+	 <input class="sbar" type="text" name="search" placeholder="Search..">
+	 </div>
+	 <div class="togglebox">
+     <div class="chathide" id="chide" style='background-color:red' style="display: none">
+     </div>	 
+	 <div class="chatlist" id="clist">
+	 </div>
+	 </div>
+  </aside>
+  <aside class="rightbar">
+   <div class="righthide" >
+   </div>
+   <div class="righthead">
+    <div class="rphoto">
+    </div>
+    <div class="rpanel">
+      <div class="info">
+	  <p>NAME<br>11:50AM</p>
+	  </div>
+	  <div class="settings">
+	  </div>
+   </div>
+   </div>
+   <div class="chatdisplay">
+   <div id="chatItems">
+   </div>
+    <div class="textbox">
+	  <input type="text" id="tbox" placeholder="type a message">
+	</div>
+   </div>
+   </aside>
+   </section>
+   
+   <!--footer-->
+<footer class="pageend">
+
+<div class="flexfoot">
+<div class="foot2">
+</div>
+<div class="foot3">
+</div>
+</div>
+<div class="foot1">
+<center><p style="color:white"><a href="#" style="font-family:helvetica">Conditions Of Usage</a> &nbsp &nbsp &nbspWeb Chat &copy </p></center>
+</div>
+</footer>
+<script> 
+
+$(document).ready(function(){
+
+
+
+
+  // localStorage can be used
+  if( sessionStorage.getItem("fname") != undefined){
+
+                       
+					      window.location.assign("what12.html");
+					   
+					   }
+					   
+
+
+$("#save").click(function store(){
+     alert("storing...!!")
+     var fn = document.getElementById('fname').value;
+     save("fname", fn)
+     var fn= document.getElementById('lname').value;
+     save("lname", fn)
+     var fn = document.getElementById('dob').value;
+	 save("dob", fn)
+	 var fn = document.getElementById('age').value;
+	 save("age",fn)
+	 var fn = document.getElementByName('gender').value;
+	 save("gender",fn)
+	 var fn = document.getElementById('grad').value;
+     save("qualification",fn)
+     var fn = document.getElementById('country').value;
+     save("country",fn)
+	 alert("in store")
+	 
+})
+});
+
+
+function sesave(key, val){
+sessionStorage.setItem(key,val);
+}
+
+
+function save(key, val){
+
+localStorage.setItem(key, val);
+}
+
+function showform(){
+    alert("showing")
+	document.getElementById('puname').innerHTML = "name: "+ sessionStorage.getItem("fname") + sessionStorage.getItem("lname") ;
+	}
+	
+
+
+
+$(document).ready(function(){
+fn = $("#fname").val();
+
+});
+
+$("#signup").click(function (){
+        $(".logindiv").hide();
+		$(".container").show();
+		}
+		);
+function validate() {
+var x = localStorage.getItem("fname");
+var y = document.forms["mform"]["uname"].value;
+  if(x == y){
+	
+	sesave("fname",x)
+    return true;
+	}
+	else{
+	alert("invalid credidentials");
+	return false;
+	
+	}
+	}
+	
+$("#back").click(function(){
+            $(".container").hide();
+			$(".logindiv").show();
+			});
+
+
+
+</script>
+
+
+
+</body>
+</html>
+
